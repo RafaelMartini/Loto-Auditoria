@@ -1,0 +1,18 @@
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-item {
+  margin: 0 10px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
