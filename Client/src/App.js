@@ -5,11 +5,11 @@ import Login from './Pages/Login';
 import Produtos from './Componentes/Produtos/Produtos';
 import Notificacoes from './Componentes/Notificacoes/Notificacoes';
 import Cadastro from './Pages/Cadastro';
-import PageLotoFacil from './Pages/PageLotoFacil-2';
-import PageLotoMania from './Pages/PageLotoMania-2';
-import PageQuina from './Pages/PageQuina-2';
-import PageMega from './Pages/PageMega-2';
-import './styles-2/app.css';
+import PageLotoFacil from './Pages/PageLotoFacil';
+import PageLotoMania from './Pages/PageLotoMania';
+import PageQuina from './Pages/PageQuina';
+import PageMega from './Pages/PageMega';
+import './styles/app.css';
 
 const logado = localStorage.getItem('@user');
 

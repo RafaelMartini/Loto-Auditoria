@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles-2/produtos.css';
+import '../../styles/produtos.css';
 import Menu from '../Menu/Menu';
 
 const Produtos = () => {

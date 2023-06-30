@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles-2/page.css';
-import GeradorLotoFacil from '../Componentes/GeradorLotoFacil-2/GeradorLotoFacil-2';
+import '../styles/page.css';
+import GeradorLotoFacil from '../Componentes/GeradorLotoFacil/GeradorLotoFacil';
 
 const PageLotoFacil = () => {
   return (

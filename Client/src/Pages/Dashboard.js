@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import '../styles-2/dashboard.css';
+import '../styles/dashboard.css';
 import Header from '../Componentes/Header/Header';
 
 function HomePage() {

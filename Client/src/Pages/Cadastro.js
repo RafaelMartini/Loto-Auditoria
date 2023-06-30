@@ -1,4 +1,4 @@
-import '../styles-2/cadastro.css';
+import '../styles/cadastro.css';
 import Img from '../Assets/result.svg';
 import * as yup from 'yup';
 import { ErrorMessage, Formik, Form, Field } from 'formik';

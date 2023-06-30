@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../../styles-2/menu.css';
+import '../../styles/menu.css';
 
 const Menu = () => {
   const Notificacoes = () => <div></div>;

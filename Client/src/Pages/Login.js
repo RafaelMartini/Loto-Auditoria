@@ -1,4 +1,4 @@
-import '../styles-2/login.css';
+import '../styles/login.css';
 import * as yup from 'yup';
 import { ErrorMessage, Formik, Form, Field } from 'formik';
 import Axios from 'axios';

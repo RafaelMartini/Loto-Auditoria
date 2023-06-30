@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../Header/Header.js';
-import '../../styles-2/grupos.css';
+import '../../styles/grupos.css';
 
 import lotofacilImg from '../../Assets/to_readme/lotofacil.png';
 import lotomaniaImg from '../../Assets/to_readme/lotomania.png';
