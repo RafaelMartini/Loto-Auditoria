@@ -7,12 +7,12 @@ import TLotomaniaImg from '../../Assets/to_readme/TLotomania.png';
 const GeradorLotomania = () => {
   const [jogos, setJogos] = useState([]);
 
-  const gerarNumeros = () => {
+  const gerarJogos = () => {
     const novosJogos = [];
     for (let i = 0; i < 10; i++) {
       const numeros = [];
-      while (numeros.length < 50) {
-        const numero = Math.floor(Math.random() * 100) + 1;
+      while (numeros.length < 20) {
+        const numero = Math.floor(Math.random() * 100);
         if (!numeros.includes(numero)) {
           numeros.push(numero);
         }
@@ -24,33 +24,15 @@ const GeradorLotomania = () => {
   };
 
   useEffect(() => {
+    gerarJogos();
     const interval = setInterval(() => {
-      gerarNumeros();
+      gerarJogos();
     }, 10000);
 
     return () => {
       clearInterval(interval);
     };
   }, []);
-
-  const [visibleNumbers, setVisibleNumbers] = useState([]);
-
-  useEffect(() => {
-    let index = 0;
-    const timer = setInterval(() => {
-      if (jogos.length > 0) {
-        setVisibleNumbers(jogos[0].slice(0, index + 1));
-        index++;
-        if (index >= jogos[0].length) {
-          clearInterval(timer);
-        }
-      }
-    }, 3000 / jogos[0]?.length);
-
-    return () => {
-      clearInterval(timer);
-    };
-  }, [jogos]);
 
   return (
     <>
@@ -71,8 +53,8 @@ const GeradorLotomania = () => {
             <div key={index} className="game">
               <span>Jogo {index + 1}</span>
               <div className="numbers-container">
-                {visibleNumbers.map((numero, index) => (
-                  <span key={index} className="number">
+                {jogo.map((numero, numeroIndex) => (
+                  <span key={numeroIndex} className="number">
                     {numero}
                   </span>
                 ))}

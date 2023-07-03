@@ -1,9 +1,66 @@
-/* styles.css */
+/* Estilo do elemento pai */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
 
-.container {
-    background-color: #03002c;
-    color: #420000;
-    padding: 20px;
-    margin: 20px;
+/* Estilo do componente Produtos */
+.products-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+
+
+
+.title{
+  background-color: #000000;
+}
+
+.LogoProdutos {
+  display: block;
+  margin: 0 auto;
+  margin-top: -290px;
+  height: 180px;
+  margin-bottom: -9px;
+
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+}
+
+.product {
+  width: 150px;
+  height: 150px;
+  background-color: #f2f2f2;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .top-row,
+  .bottom-row {
+    flex-direction: column;
   }
   
+  .product {
+    margin-bottom: 10px;
+  }
+}

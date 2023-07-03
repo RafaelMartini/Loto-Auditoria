@@ -7,7 +7,7 @@ import TLotofacilImg from '../../Assets/to_readme/TLotofacil.png';
 const GeradorLotofacil = () => {
   const [jogos, setJogos] = useState([]);
 
-  const gerarNumeros = () => {
+  const gerarJogos = () => {
     const novosJogos = [];
     for (let i = 0; i < 10; i++) {
       const numeros = [];
@@ -24,33 +24,15 @@ const GeradorLotofacil = () => {
   };
 
   useEffect(() => {
+    gerarJogos();
     const interval = setInterval(() => {
-      gerarNumeros();
-    }, 10000);
+      gerarJogos();
+    }, 5000);
 
     return () => {
       clearInterval(interval);
     };
   }, []);
-
-  const [visibleNumbers, setVisibleNumbers] = useState([]);
-
-  useEffect(() => {
-    let index = 0;
-    const timer = setInterval(() => {
-      if (jogos.length > 0) {
-        setVisibleNumbers(jogos[0].slice(0, index + 1));
-        index++;
-        if (index >= jogos[0].length) {
-          clearInterval(timer);
-        }
-      }
-    }, 3000 / jogos[0]?.length);
-
-    return () => {
-      clearInterval(timer);
-    };
-  }, [jogos]);
 
   return (
     <>
@@ -72,8 +54,8 @@ const GeradorLotofacil = () => {
             <div key={index} className="game">
               <span>Jogo {index + 1}</span>
               <div className="numbers-container">
-                {visibleNumbers.map((numero, index) => (
-                  <span key={index} className="number">
+                {jogo.map((numero, numeroIndex) => (
+                  <span key={numeroIndex} className="number">
                     {numero}
                   </span>
                 ))}

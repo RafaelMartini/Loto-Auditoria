@@ -4,15 +4,15 @@ import Header from '../Header/Header';
 
 import TMegaImg from '../../Assets/to_readme/TMega.png';
 
-const GeradorLotofacil = () => {
+const GeradorMega = () => {
   const [jogos, setJogos] = useState([]);
 
-  const gerarNumeros = () => {
+  const gerarJogos = () => {
     const novosJogos = [];
     for (let i = 0; i < 10; i++) {
       const numeros = [];
-      while (numeros.length < 15) {
-        const numero = Math.floor(Math.random() * 25) + 1;
+      while (numeros.length < 6) {
+        const numero = Math.floor(Math.random() * 60) + 1;
         if (!numeros.includes(numero)) {
           numeros.push(numero);
         }
@@ -24,8 +24,9 @@ const GeradorLotofacil = () => {
   };
 
   useEffect(() => {
+    gerarJogos();
     const interval = setInterval(() => {
-      gerarNumeros();
+      gerarJogos();
     }, 10000);
 
     return () => {
@@ -33,32 +34,13 @@ const GeradorLotofacil = () => {
     };
   }, []);
 
-  const [visibleNumbers, setVisibleNumbers] = useState([]);
-
-  useEffect(() => {
-    let index = 0;
-    const timer = setInterval(() => {
-      if (jogos.length > 0) {
-        setVisibleNumbers(jogos[0].slice(0, index + 1));
-        index++;
-        if (index >= jogos[0].length) {
-          clearInterval(timer);
-        }
-      }
-    }, 3000 / jogos[0]?.length);
-
-    return () => {
-      clearInterval(timer);
-    };
-  }, [jogos]);
-
   return (
     <>
       <div className="lotofacil-container">
         <h1 className="title">
           <img
             src={TMegaImg}
-            alt="Lotofácil"
+            alt="Mega-Sena"
             className="link-item-icon"
           />
         </h1>
@@ -66,14 +48,14 @@ const GeradorLotofacil = () => {
         <h6 className="subTitle">
           Nossos números são gerados através da auditoria da loteria.
         </h6>
-        <h6 className="subTitle">Segundas | Quartas | Sextas</h6>
+        <h6 className="subTitle">Quartas e Sábados</h6>
         <div className="games-container">
           {jogos.map((jogo, index) => (
             <div key={index} className="game">
               <span>Jogo {index + 1}</span>
               <div className="numbers-container">
-                {visibleNumbers.map((numero, index) => (
-                  <span key={index} className="number">
+                {jogo.map((numero, numeroIndex) => (
+                  <span key={numeroIndex} className="number">
                     {numero}
                   </span>
                 ))}
@@ -87,4 +69,4 @@ const GeradorLotofacil = () => {
   );
 };
 
-export default GeradorLotofacil;
+export default GeradorMega;
