@@ -18,7 +18,7 @@ const Grupos = () => {
             alt="Lotofácil"
             className="link-item-icon"
           />
-          Gerador da Lotofácil
+          GERADOR DA LOTOFÁCIL
         </Link>
         <Link to="/lotomania" className="link-item">
           <img
@@ -26,7 +26,7 @@ const Grupos = () => {
             alt="Lotomania"
             className="link-item-icon"
           />
-          Gerador da Lotomania
+          GERADOR DA LOTOMANIA
         </Link>
         <Link to="/quina" className="link-item">
           <img
@@ -34,11 +34,11 @@ const Grupos = () => {
             alt="Quina"
             className="link-item-icon"
           />
-          Gerador da Quina
+          GERADOR DA QUINA
         </Link>
         <Link to="/mega" className="link-item">
           <img src={megaImg} alt="Mega" className="link-item-icon" />
-          Gerador da Mega
+          GERADOR DA MEGA
         </Link>
       </div>
       <Header />

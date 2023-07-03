@@ -2,6 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .menu-item {
@@ -10,7 +15,8 @@
 
 .menu-link {
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
+  transition: text-decoration 0.3s ease;
 }
 
 .menu-link:hover {

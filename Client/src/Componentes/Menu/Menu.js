@@ -9,17 +9,17 @@ const Menu = () => {
     <div className="menu-container">
       <div className="menu-item">
         <Link to="/produtos" className="menu-link">
-          Produtos
+          PRODUTOS
         </Link>
       </div>
       <div className="menu-item">
         <Link to="/grupos" className="menu-link">
-          Grupos
+          GRUPOS
         </Link>
       </div>
       <div className="menu-item">
         <Link to="/notificacoes" className="menu-link">
-          Notificações
+          NOTIFICAÇÕES
           <span className="notification-badge">
             {/* Opcional: adicione um indicador de notificação, se necessário */}
             {/* Conteúdo do componente Notificacoes */}
