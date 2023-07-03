@@ -98,8 +98,13 @@ app.get('/init_tables', (req, res) => {
     }
   });
 
+  // Perfil
+  // ADM - Incluir Usuarios de Applications (Pessoas da Empresa Rafael/ Papai / Kellen)
+  // Operator - Pode Manipular o Cadastro de Usuarios, Mas nao pode alterar Senhas / Posso emitir link para o Cliente ou Usuarios Recuperar
+  // Client - Pessoas que compraram e Jogando / Alterar  Senha e dados pessoas e Jogar
+  //
   const creatTableUsuarios =
-    'CREATE TABLE IF NOT EXISTS usuarios(email varchar(200) NOT NULL,password varchar(200) NOT NULL, PRIMARY KEY (email));';
+    'CREATE TABLE IF NOT EXISTS usuarios(email varchar(200) NOT NULL,password varchar(200) NOT NULL, perfil varchar(20) NOT NULL PRIMARY KEY (email));';
 
   database.query(creatTableUsuarios, (err, result) => {
     // if (err) throw err;
