@@ -148,9 +148,19 @@ body {
   }
 
   .pay-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 14px;
     margin-top: 10px;
+    background-color: green;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
   }
+  
 }
 
 .selected-numbers-table-wrapper {
