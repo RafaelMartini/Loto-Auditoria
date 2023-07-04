@@ -2,7 +2,7 @@
     margin: 0;
     width: 100vw;
     height: 100vh;
-    background: #113059;
+    background: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@
   }
   
   .left-cadastro h1 {
-    color: #77ffc0;
+    color: #DAA520;
   }
   
   .right-cadastro {
@@ -66,19 +66,15 @@
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
-    background-color: #113059;
+    background-color: #DAA520;
     border-radius: 20px;
     box-shadow: 0px 10px 40px #00000056;
   }
   
   .card-cadastro h1 {
-    color: #91B7D9;
+    color: #000000;
     font-weight: 800;
     margin: 0;
-  }
-  
-  .chart{
-    width: 80%;
   }
   
   
@@ -131,7 +127,7 @@
     letter-spacing: 3px;
     cursor: pointer;
     margin-top: 15px;
-    background: #B3DAF2;
+    background: #B8860B;
     color: black;
   }
   
@@ -169,4 +165,9 @@
     }
   }
   
+  .logoOuro{
+    height: 900px;
+    margin-bottom: -337px;
+    margin-top: -338px;
+  }
   

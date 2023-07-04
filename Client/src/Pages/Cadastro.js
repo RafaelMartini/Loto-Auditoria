@@ -1,5 +1,5 @@
 import '../styles/cadastro.css';
-import Img from '../Assets/result.svg';
+import Img from '../Assets/to_readme/logo.svg';
 import * as yup from 'yup';
 import { ErrorMessage, Formik, Form, Field } from 'formik';
 import Axios from 'axios';
@@ -48,11 +48,7 @@ function Cadastro({ logado = false }) {
   return (
     <div className="body">
       <div className="left-cadastro">
-        <img
-          src={Img}
-          alt="Pessoas olhando gráficos"
-          className="chart"
-        />
+        <img src={Img} alt="logoOuro" className="logoOuro" />
       </div>
       <div className="right-cadastro">
         <div className="card-cadastro">

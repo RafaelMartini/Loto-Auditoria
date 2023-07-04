@@ -2,7 +2,7 @@ import '../styles/login.css';
 import * as yup from 'yup';
 import { ErrorMessage, Formik, Form, Field } from 'formik';
 import Axios from 'axios';
-import Img from '../Assets/result.svg';
+import Img from '../Assets/to_readme/logo.svg';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { ToastContainer } from 'react-toastify';
@@ -53,11 +53,7 @@ function Login({ logado = false }) {
   return (
     <div className="body">
       <div className="left-login">
-        <img
-          src={Img}
-          alt="Pessoas olhando gráficos"
-          className="chart"
-        />
+        <img src={Img} alt="logoOuro" className="logoOuro" />
       </div>
 
       <div className="right-login">

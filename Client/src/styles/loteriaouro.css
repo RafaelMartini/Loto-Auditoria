@@ -1,83 +1,159 @@
+body {
+  overflow: auto;
+}
+
+
 .loteria-ouro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: black;
-  }
-  
-  .loteria-ouro h2 {
-    color: #ffffff;
-    font-family: 'Baskerville', serif;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.loteria-ouro h2 {
+  color: #ffffff;
+  font-family: 'Baskerville', serif;
+}
+
+.numbers-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 300px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.number {
+  padding: 2px 3px;
+  margin: 2px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.selected {
+  background-color: #daa520;
+  color: #ffffff;
+}
+
+.picked-numbers {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.value {
+  color: #ffffff;
+}
+
+.bet-button {
+  background-color: #daa520;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.selected-numbers-table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.selected-numbers-table th,
+.selected-numbers-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ffffff;
+  color: #000000;
+}
+
+.selected-numbers-table th {
+  background-color: #daa520;
+}
+
+.selected-numbers-table tr:nth-child(even) {
+  background-color: #daa520;
+}
+
+.selected-numbers-table tr:nth-child(odd) {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.summary-row span {
+  margin-right: 10px;
+}
+
+.pay-button {
+  display: block;
+  background-color: #daa520;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  align-self: center;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 480px) {
   .numbers-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 300px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    max-width: 200px;
   }
-  
+
   .number {
-    padding: 2px 3px;
-    margin: 2px;
-    background-color: #ffffff;
-    color: #000000;
-    border-radius: 20px;
-    font-weight: bold;
+    font-size: 14px;
+    padding: 1px 2px;
+    margin: 1px;
   }
-  
-  .selected {
-    background-color: #DAA520;
-    color: #ffffff;
-  }
-  
+
   .picked-numbers {
-    color: #ffffff;
-    margin-bottom: 10px;
+    font-size: 14px;
   }
-  
+
   .value {
-    color: #ffffff;
+    font-size: 14px;
   }
-  
+
   .bet-button {
-    background-color: #DAA520;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 20px;
+    font-size: 14px;
   }
-  
+
   .selected-numbers-table {
-    margin-top: 20px;
     width: 100%;
     border-collapse: collapse;
+    overflow-y: auto;
+    max-height: 200px; /* Defina a altura máxima desejada */
   }
-  
-  .selected-numbers-table th,
-  .selected-numbers-table td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #ffffff;
-    color: #000000;
+
+  .summary-row {
+    font-size: 14px;
   }
-  
-  .selected-numbers-table th {
-    background-color: #DAA520;
+
+  .pay-button {
+    font-size: 14px;
+    margin-top: 10px;
   }
-  
-  .selected-numbers-table tr:nth-child(even) {
-    background-color: #DAA520;
-  }
-  
-  .selected-numbers-table tr:nth-child(odd) {
-    background-color: #ffffff;
-    color: #000000;
-  }
+}
+
+.selected-numbers-table-wrapper {
+  overflow: auto;
+  max-height: 300px; /* Defina a altura máxima desejada */
+}

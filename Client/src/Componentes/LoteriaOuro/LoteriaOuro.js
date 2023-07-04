@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { FiTrash2 } from 'react-icons/fi';
 import Header from '../Header/Header';
 import '../../styles/loteriaouro.css';
 
 const LoteriaOuro = () => {
   const [selectedNumbers, setSelectedNumbers] = useState([]);
+  const [selectedSets, setSelectedSets] = useState([]);
   const [betPlaced, setBetPlaced] = useState(false);
 
   const handleNumberClick = (number) => {
@@ -34,8 +36,7 @@ const LoteriaOuro = () => {
     return numbers;
   };
 
-  const calculatePrice = () => {
-    const numSelected = selectedNumbers.length;
+  const calculatePrice = (numSelected) => {
     if (numSelected === 15) {
       return 10;
     } else if (numSelected === 16) {
@@ -48,39 +49,65 @@ const LoteriaOuro = () => {
   };
 
   const handleBetClick = () => {
-    setBetPlaced(true);
+    const numSelected = selectedNumbers.length;
+    if (numSelected >= 15 && numSelected <= 17) {
+      const price = calculatePrice(numSelected);
+      const newSet = {
+        numbers: [...selectedNumbers].sort((a, b) => a - b),
+        price: price,
+      };
+      setSelectedSets([...selectedSets, newSet]);
+      setSelectedNumbers([]);
+      setBetPlaced(true);
+    }
+  };
+
+  const handleDeleteSet = (index) => {
+    const updatedSets = [...selectedSets];
+    updatedSets.splice(index, 1);
+    setSelectedSets(updatedSets);
   };
 
   const renderSelectedNumbersTable = () => {
     if (betPlaced) {
-      const selectedSets = [];
-      const numSets = Math.floor(selectedNumbers.length / 15);
-      for (let i = 0; i < numSets; i++) {
-        const startIndex = i * 15;
-        const endIndex = startIndex + 15;
-        const setNumbers = selectedNumbers.slice(
-          startIndex,
-          endIndex,
-        );
-        selectedSets.push(setNumbers);
-      }
-
       return (
         <table className="selected-numbers-table">
           <thead>
             <tr>
               <th>Conjunto de Números</th>
               <th>Valor</th>
+              <th>Ação</th>
             </tr>
           </thead>
           <tbody>
             {selectedSets.map((set, index) => (
               <tr key={index}>
-                <td>{set.join(', ')}</td>
-                <td>R$10</td>
+                <td>{set.numbers.join(', ')}</td>
+                <td>R${set.price}</td>
+                <td>
+                  <button
+                    className="delete-set-button"
+                    onClick={() => handleDeleteSet(index)}
+                  >
+                    <FiTrash2 /> {/* Ícone de lixeira */}
+                  </button>
+                </td>
               </tr>
             ))}
           </tbody>
+          <tfoot>
+            <tr>
+              <td colSpan="2">
+                Número de Conjuntos: {selectedSets.length}
+              </td>
+              <td>Total: R${calculateTotal()}</td>
+            </tr>
+            <tr>
+              <td colSpan="3">
+                <button className="pay-button">PAGAR BILHETES</button>
+              </td>
+            </tr>
+          </tfoot>
         </table>
       );
     } else {
@@ -88,18 +115,31 @@ const LoteriaOuro = () => {
     }
   };
 
+  const calculateTotal = () => {
+    let total = 0;
+    selectedSets.forEach((set) => {
+      total += set.price;
+    });
+    return total;
+  };
+
   return (
     <div className="loteria-ouro">
       <h2>Escolha seus números (máximo de 17):</h2>
       <div className="numbers-container">{renderNumbers()}</div>
       <p className="picked-numbers">
-        Números selecionados: {selectedNumbers.join(', ')}
+        Números selecionados:{' '}
+        {selectedNumbers.sort((a, b) => a - b).join(', ')}
       </p>
-      <p className="value">Valor: R${calculatePrice()}</p>
+      <p className="value">
+        Valor: R${calculatePrice(selectedNumbers.length)}
+      </p>
       <button className="bet-button" onClick={handleBetClick}>
         APOSTAR NESSES NÚMEROS
       </button>
-      {renderSelectedNumbersTable()}
+      <div className="selected-numbers-table-wrapper">
+        {renderSelectedNumbersTable()}
+      </div>
       <Header />
     </div>
   );
