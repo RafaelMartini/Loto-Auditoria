@@ -7,6 +7,7 @@ const LoteriaOuro = () => {
   const [selectedNumbers, setSelectedNumbers] = useState([]);
   const [selectedSets, setSelectedSets] = useState([]);
   const [betPlaced, setBetPlaced] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
 
   const handleNumberClick = (number) => {
     if (selectedNumbers.includes(number)) {
@@ -104,7 +105,12 @@ const LoteriaOuro = () => {
             </tr>
             <tr>
               <td colSpan="3">
-                <button className="pay-button">PAGAR BILHETES</button>
+                <button
+                  className="pay-button"
+                  onClick={() => setShowPopup(true)}
+                >
+                  PAGAR BILHETES
+                </button>
               </td>
             </tr>
           </tfoot>
@@ -140,6 +146,21 @@ const LoteriaOuro = () => {
       <div className="selected-numbers-table-wrapper">
         {renderSelectedNumbersTable()}
       </div>
+      {showPopup && (
+        <div className="popup">
+          <div className="popup-content">
+            <h3>Pagamento via Pix</h3>
+            <p>Pix Chave Aleatória: 1234567812345</p>
+            <p>Valor total a pagar: R${calculateTotal()}</p>
+            <button
+              className="close-button"
+              onClick={() => setShowPopup(false)}
+            >
+              X
+            </button>
+          </div>
+        </div>
+      )}
       <Header />
     </div>
   );
