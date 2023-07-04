@@ -8,6 +8,7 @@ import lotomaniaImg from '../../Assets/to_readme/lotomania.png';
 import quinaImg from '../../Assets/to_readme/quina.png';
 import megaImg from '../../Assets/to_readme/mega.png';
 import TGruposImg from '../../Assets/to_readme/grupos.png';
+import loteriaOuroImg from '../../Assets/to_readme/lotoOuro.png';
 
 const Grupos = () => {
   return (
@@ -49,6 +50,14 @@ const Grupos = () => {
             className="link-item-icon-jogos"
           />
           GERADOR DA MEGA
+        </Link>
+        <Link to="/loteriaouro" className="link-item">
+          <img
+            src={loteriaOuroImg}
+            alt="loteriaouro"
+            className="link-item-icon-jogos"
+          />
+          LOTERIA OURO
         </Link>
       </div>
       <Header />
