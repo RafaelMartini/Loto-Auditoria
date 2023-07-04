@@ -15,10 +15,20 @@
 
 .menu-link {
   text-decoration: none;
-  color: #ffffff;
+  color: #DAA520;
   transition: text-decoration 0.3s ease;
 }
 
 .menu-link:hover {
   text-decoration: underline;
+}
+
+.botaoProdutos{
+  height: 50px;
+}
+.botaoGrupos{
+  height: 50px;
+}
+.botaoNotificacoes{
+  height: 50px;
 }

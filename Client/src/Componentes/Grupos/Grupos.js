@@ -7,16 +7,22 @@ import lotofacilImg from '../../Assets/to_readme/lotofacil.png';
 import lotomaniaImg from '../../Assets/to_readme/lotomania.png';
 import quinaImg from '../../Assets/to_readme/quina.png';
 import megaImg from '../../Assets/to_readme/mega.png';
+import TGruposImg from '../../Assets/to_readme/grupos.png';
 
 const Grupos = () => {
   return (
     <div>
       <div className="link-container">
+        <img
+          src={TGruposImg}
+          alt="LogoGrupos"
+          className="LogoGrupos"
+        />
         <Link to="/lotofacil" className="link-item">
           <img
             src={lotofacilImg}
             alt="Lotofácil"
-            className="link-item-icon"
+            className="link-item-icon-jogos"
           />
           GERADOR DA LOTOFÁCIL
         </Link>
@@ -24,7 +30,7 @@ const Grupos = () => {
           <img
             src={lotomaniaImg}
             alt="Lotomania"
-            className="link-item-icon"
+            className="link-item-icon-jogos"
           />
           GERADOR DA LOTOMANIA
         </Link>
@@ -32,12 +38,16 @@ const Grupos = () => {
           <img
             src={quinaImg}
             alt="Quina"
-            className="link-item-icon"
+            className="link-item-icon-jogos"
           />
           GERADOR DA QUINA
         </Link>
         <Link to="/mega" className="link-item">
-          <img src={megaImg} alt="Mega" className="link-item-icon" />
+          <img
+            src={megaImg}
+            alt="Mega"
+            className="link-item-icon-jogos"
+          />
           GERADOR DA MEGA
         </Link>
       </div>

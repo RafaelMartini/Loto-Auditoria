@@ -11,6 +11,8 @@
 
 @media screen and (max-width: 768px) {
   .numbers-container {
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     max-width: 200px;
   }
@@ -20,9 +22,7 @@
   }
 }
 
-
 .title {
-  /* padding-top: 30px; */
   font-size: 30px;
   margin-bottom: 10px;
   margin-top: 300px;
@@ -43,13 +43,12 @@
   margin-bottom: 20px;
 }
 
-
 .game {
   margin: 5px;
 }
 
 .numbers-container {
-  display: table;
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 300px;
@@ -62,5 +61,6 @@
   margin: 2px;
   background-color: #ffffff;
   color: #000000;
-  border-radius: 20px;
+  border-radius: -100%;
+  font-weight: bold;
 }

@@ -1,10 +1,4 @@
-.notificacao {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  background-color: #000000;
-  color: #ff0000; /* Adicione uma cor de texto para que seja visível */
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.page-container {
+  height: 100vh; /* Define a altura máxima para ocupar a altura total da tela */
+  overflow: auto; /* Habilita a barra de rolagem quando o conteúdo exceder a altura máxima */
 }

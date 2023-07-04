@@ -41,7 +41,7 @@ const GeradorLotofacil = () => {
           <img
             src={TLotofacilImg}
             alt="Lotofácil"
-            className="link-item-icon"
+            className="link-item-icon-jogos"
           />
         </h1>
 

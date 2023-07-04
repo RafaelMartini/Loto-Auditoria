@@ -12,6 +12,12 @@
   bottom: 0;
   left: 0;
 }
+.LogoGrupos {
+  display: block;
+  margin: 0 auto;
+  height: 180px;
+  margin-bottom: 20px;
+}
 
 
 .link-item {

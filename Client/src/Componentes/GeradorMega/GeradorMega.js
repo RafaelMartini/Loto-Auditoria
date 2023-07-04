@@ -41,7 +41,7 @@ const GeradorMega = () => {
           <img
             src={TMegaImg}
             alt="Mega-Sena"
-            className="link-item-icon"
+            className="link-item-icon-jogos"
           />
         </h1>
 

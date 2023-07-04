@@ -16,6 +16,11 @@ body {
   height: 100%;
 }
 
+.products-container img {
+  border-radius: 50%;
+}
+
+
 
 
 

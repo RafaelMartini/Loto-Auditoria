@@ -3,6 +3,7 @@ import '../../styles/produtos.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Menu from '../Menu/Menu';
+import '../../styles/notificacoes.css';
 
 function Notificacoes() {
   const [notifications, setNotifications] = useState([
@@ -65,7 +66,7 @@ function Notificacoes() {
         });
         setNotifications([...notifications]); // atualiza o estado das notificações
       }
-    }, 30 * 60 * 1000);
+    }, 10000);
 
     return () => {
       clearInterval(interval);
