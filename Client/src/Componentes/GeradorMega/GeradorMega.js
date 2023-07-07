@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../../styles/pageGeradores.css';
 import Header from '../Header/Header';
 
-import TMegaImg from '../../Assets/to_readme/TMega.png';
+// import TMegaImg from '../../Assets/to_readme/TMega.png';
 
 const GeradorMega = () => {
   const [jogos, setJogos] = useState([]);

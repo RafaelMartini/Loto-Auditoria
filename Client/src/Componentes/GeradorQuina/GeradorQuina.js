@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../../styles/pageGeradores.css';
 import Header from '../Header/Header';
 
-import TQuinaImg from '../../Assets/to_readme/TQuina.png';
+// import TQuinaImg from '../../Assets/to_readme/TQuina.png';
 
 const GeradorQuina = () => {
   const [jogos, setJogos] = useState([]);
