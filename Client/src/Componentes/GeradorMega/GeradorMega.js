@@ -38,11 +38,11 @@ const GeradorMega = () => {
     <>
       <div className="lotofacil-container">
         <h1 className="title">
-          <img
+          {/* <img
             src={TMegaImg}
             alt="Mega-Sena"
             className="link-item-icon-jogos"
-          />
+          /> */}
         </h1>
 
         <h6 className="subTitle">

@@ -38,11 +38,11 @@ const GeradorQuina = () => {
     <>
       <div className="lotofacil-container">
         <h1 className="title">
-          <img
+          {/* <img
             src={TQuinaImg}
             alt="Lotofácil"
             className="link-item-icon-jogos"
-          />
+          /> */}
         </h1>
 
         <h6 className="subTitle">

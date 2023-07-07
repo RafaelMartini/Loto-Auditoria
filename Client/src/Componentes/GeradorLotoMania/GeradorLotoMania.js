@@ -37,7 +37,7 @@ const GeradorLotomania = () => {
   return (
     <>
       <div className="lotofacil-container">
-        <h1 className="title">
+        <h1 className="title-lotomania">
           <img
             src={TLotomaniaImg}
             alt="Lotomania"

@@ -49,13 +49,29 @@ const LoteriaOuro = () => {
     }
   };
 
+  const generateRandomKey = () => {
+    // Gera uma chave de identificação aleatória com 12 caracteres alfanuméricos
+    const characters =
+      'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    let key = '';
+    for (let i = 0; i < 12; i++) {
+      const randomIndex = Math.floor(
+        Math.random() * characters.length,
+      );
+      key += characters[randomIndex];
+    }
+    return key;
+  };
+
   const handleBetClick = () => {
     const numSelected = selectedNumbers.length;
     if (numSelected >= 15 && numSelected <= 17) {
       const price = calculatePrice(numSelected);
+      const key = generateRandomKey();
       const newSet = {
         numbers: [...selectedNumbers].sort((a, b) => a - b),
         price: price,
+        key: key,
       };
       setSelectedSets([...selectedSets, newSet]);
       setSelectedNumbers([]);
@@ -150,7 +166,9 @@ const LoteriaOuro = () => {
         <div className="popup">
           <div className="popup-content">
             <h3>Pagamento via Pix</h3>
-            <p>Pix Chave Aleatória: 1234567812345</p>
+            <p>Pix Chave Aleatória: 123.456.789</p>
+
+            <p>Salve a sua chave secreta: {generateRandomKey()}</p>
             <p>Valor total a pagar: R${calculateTotal()}</p>
             <button
               className="close-button"
