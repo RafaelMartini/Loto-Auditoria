@@ -20,7 +20,7 @@ const Produtos = () => {
       <div className="products-container">
         <div className="top-row">
           <a
-            href="https://go.perfectpay.com.br/PPU38CMHQCT?UPSELL=TRUE"
+            href="https://go.perfectpay.com.br/PPU38CMHQDU?UPSELL=TRUE"
             className="product product1"
             style={{
               backgroundImage: `url(${GeradorLotomaniaPayImg})`,
