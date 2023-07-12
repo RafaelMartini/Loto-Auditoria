@@ -3,6 +3,9 @@ import '../../styles/produtos.css';
 import Menu from '../Menu/Menu';
 
 import TProdutosImg from '../../Assets/to_readme/produtos.png';
+import GeradorLotomaniaPayImg from '../../Assets/to_readme/GeradorLotomaniaPay.png';
+import GeradorQuinaPayImg from '../../Assets/to_readme/GeradorQuinaPay.png';
+import GeradorMegaPayImg from '../../Assets/to_readme/GeradorMegaPay.png';
 
 const Produtos = () => {
   return (
@@ -16,12 +19,20 @@ const Produtos = () => {
       </h1>
       <div className="products-container">
         <div className="top-row">
-          <div className="product product1"></div>
-          <div className="product product2"></div>
-          <div className="product product3"></div>
-          <div className="product product4"></div>
-          <div className="product product5"></div>
-          <div className="product product6"></div>
+          <div
+            className="product product1"
+            style={{
+              backgroundImage: `url(${GeradorLotomaniaPayImg})`,
+            }}
+          ></div>
+          <div
+            className="product product2"
+            style={{ backgroundImage: `url(${GeradorQuinaPayImg})` }}
+          ></div>
+          <div
+            className="product product3"
+            style={{ backgroundImage: `url(${GeradorMegaPayImg})` }}
+          ></div>
         </div>
       </div>
       <Menu />
