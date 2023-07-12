@@ -19,20 +19,32 @@ const Produtos = () => {
       </h1>
       <div className="products-container">
         <div className="top-row">
-          <div
+          <a
+            href="https://go.perfectpay.com.br/PPU38CMHQCT?UPSELL=TRUE"
             className="product product1"
             style={{
               backgroundImage: `url(${GeradorLotomaniaPayImg})`,
             }}
-          ></div>
-          <div
+          >
+            <img
+              src={GeradorLotomaniaPayImg}
+              alt="GeradorLotomaniaPay"
+            />
+          </a>
+          <a
+            href="https://go.perfectpay.com.br/PPU38CMHQEF?UPSELL=TRUE"
             className="product product2"
             style={{ backgroundImage: `url(${GeradorQuinaPayImg})` }}
-          ></div>
-          <div
+          >
+            <img src={GeradorQuinaPayImg} alt="GeradorQuinaPay" />
+          </a>
+          <a
+            href="https://go.perfectpay.com.br/PPU38CMHQEP?UPSELL=TRUE"
             className="product product3"
             style={{ backgroundImage: `url(${GeradorMegaPayImg})` }}
-          ></div>
+          >
+            <img src={GeradorMegaPayImg} alt="GeradorMegaPay" />
+          </a>
         </div>
       </div>
       <Menu />
