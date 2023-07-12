@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.7087093a.css",
-    "main.js": "/static/js/main.b1a00ec3.js",
+    "main.js": "/static/js/main.bb0dc128.js",
     "static/media/produtos.png": "/static/media/produtos.0d48417a44668dd887a6.png",
     "static/media/grupos.png": "/static/media/grupos.fb32df27cdbbc820d438.png",
-    "static/media/GeradorQuinaPay.png": "/static/media/GeradorQuinaPay.da12da210290c4f50a53.png",
-    "static/media/GeradorLotomaniaPay.png": "/static/media/GeradorLotomaniaPay.bc893d5f2f31dfe2413f.png",
-    "static/media/GeradorMegaPay.png": "/static/media/GeradorMegaPay.51df25d27a520210eefe.png",
+    "static/media/GeradorQuinaPay.png": "/static/media/GeradorQuinaPay.f0a39fe7726016a0d145.png",
+    "static/media/GeradorLotomaniaPay.png": "/static/media/GeradorLotomaniaPay.0649150f5c7991b9369f.png",
+    "static/media/GeradorMegaPay.png": "/static/media/GeradorMegaPay.75508406a3bb73dfe89d.png",
     "static/media/TLotomania.png": "/static/media/TLotomania.df0a1ca485b7e1627f9e.png",
     "static/media/TLotofacil.png": "/static/media/TLotofacil.76bf8b7a5b281f9be49b.png",
     "static/media/mega.png": "/static/media/mega.c21e625428fe8f25c054.png",
@@ -16,10 +16,10 @@
     "static/media/lotoOuro.png": "/static/media/lotoOuro.143f2941fb7a8b5b290c.png",
     "index.html": "/index.html",
     "main.7087093a.css.map": "/static/css/main.7087093a.css.map",
-    "main.b1a00ec3.js.map": "/static/js/main.b1a00ec3.js.map"
+    "main.bb0dc128.js.map": "/static/js/main.bb0dc128.js.map"
   },
   "entrypoints": [
     "static/css/main.7087093a.css",
-    "static/js/main.b1a00ec3.js"
+    "static/js/main.bb0dc128.js"
   ]
 }
