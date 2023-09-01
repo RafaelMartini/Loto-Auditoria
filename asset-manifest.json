@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.076372a3.css",
-    "main.js": "/static/js/main.ef6e9cd6.js",
+    "main.css": "/static/css/main.a2e3882d.css",
+    "main.js": "/static/js/main.a87dc18d.js",
     "static/media/tigre.webp": "/static/media/tigre.9affefee49ca00658090.webp",
     "static/media/produtos.png": "/static/media/produtos.0d48417a44668dd887a6.png",
     "static/media/grupos.png": "/static/media/grupos.fb32df27cdbbc820d438.png",
@@ -10,16 +10,12 @@
     "static/media/GeradorLotomaniaPay.png": "/static/media/GeradorLotomaniaPay.0649150f5c7991b9369f.png",
     "static/media/GeradorMegaPay.png": "/static/media/GeradorMegaPay.75508406a3bb73dfe89d.png",
     "static/media/TLotomania.png": "/static/media/TLotomania.df0a1ca485b7e1627f9e.png",
-    "static/media/mega.png": "/static/media/mega.c21e625428fe8f25c054.png",
-    "static/media/quina.png": "/static/media/quina.524d448b77fe44319b0f.png",
-    "static/media/lotomania.png": "/static/media/lotomania.0d3470ebf74413504575.png",
-    "static/media/lotoOuro.png": "/static/media/lotoOuro.143f2941fb7a8b5b290c.png",
     "index.html": "/index.html",
-    "main.076372a3.css.map": "/static/css/main.076372a3.css.map",
-    "main.ef6e9cd6.js.map": "/static/js/main.ef6e9cd6.js.map"
+    "main.a2e3882d.css.map": "/static/css/main.a2e3882d.css.map",
+    "main.a87dc18d.js.map": "/static/js/main.a87dc18d.js.map"
   },
   "entrypoints": [
-    "static/css/main.076372a3.css",
-    "static/js/main.ef6e9cd6.js"
+    "static/css/main.a2e3882d.css",
+    "static/js/main.a87dc18d.js"
   ]
 }
