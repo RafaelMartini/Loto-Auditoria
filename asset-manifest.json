@@ -1,21 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.a2e3882d.css",
-    "main.js": "/static/js/main.a87dc18d.js",
+    "main.css": "/static/css/main.9a059fa5.css",
+    "main.js": "/static/js/main.667a1bed.js",
     "static/media/tigre.webp": "/static/media/tigre.9affefee49ca00658090.webp",
-    "static/media/produtos.png": "/static/media/produtos.0d48417a44668dd887a6.png",
     "static/media/grupos.png": "/static/media/grupos.fb32df27cdbbc820d438.png",
     "static/media/tigreLetra.webp": "/static/media/tigreLetra.3ac82be6dd1bfddf94ab.webp",
-    "static/media/GeradorQuinaPay.png": "/static/media/GeradorQuinaPay.f0a39fe7726016a0d145.png",
-    "static/media/GeradorLotomaniaPay.png": "/static/media/GeradorLotomaniaPay.0649150f5c7991b9369f.png",
-    "static/media/GeradorMegaPay.png": "/static/media/GeradorMegaPay.75508406a3bb73dfe89d.png",
-    "static/media/TLotomania.png": "/static/media/TLotomania.df0a1ca485b7e1627f9e.png",
+    "static/media/logoAviator.webp": "/static/media/logoAviator.db862c51e3ea5954306b.webp",
+    "static/media/loading.png": "/static/media/loading.5b1f56678b69dfc055bb.png",
+    "static/media/aviator.png": "/static/media/aviator.c88a0e34d1464d882fb9.png",
     "index.html": "/index.html",
-    "main.a2e3882d.css.map": "/static/css/main.a2e3882d.css.map",
-    "main.a87dc18d.js.map": "/static/js/main.a87dc18d.js.map"
+    "main.9a059fa5.css.map": "/static/css/main.9a059fa5.css.map",
+    "main.667a1bed.js.map": "/static/js/main.667a1bed.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2e3882d.css",
-    "static/js/main.a87dc18d.js"
+    "static/css/main.9a059fa5.css",
+    "static/js/main.667a1bed.js"
   ]
 }
